@@ -19,6 +19,8 @@ def get_path_to_Bradshaw_based_on_computer():
         return os.path.join('/shares/onfnas01/Research/Bradshaw')
     elif hostname == 'OON-DGX01':
         return os.path.join('/mnt/DGXUserData/tjb129/Bradshaw')
+    elif hostname == 'tyler_docker_dgx':
+        return os.path.join('/Data/Data/Bradshaw')
 
 def all_subdirs_search(top_folder):
     subfolders = [f.path for f in os.scandir(top_folder) if f.is_dir()]
